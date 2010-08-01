@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'CINeol' target in the 'CINeol' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <CoreData/CoreData.h>
+    #import <DATouchKit/DATouchKit.h>
+
+    #import "DACINeolFlurry.h"
+#endif

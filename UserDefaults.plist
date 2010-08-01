@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DACINeolInitialSection</key>
+	<integer>0</integer>
+	<key>DACINeolNumberOfCommentsPerPage</key>
+	<integer>15</integer>
+	<key>DACINeolNumberOfNewsInNewsSection</key>
+	<integer>15</integer>
+	<key>DACINeolMovieSortCategoryInMovieShowtimesSection</key>
+	<integer>0</integer>
+	<key>DACINeolNumberOfWeeksInMovieShowtimesSection</key>
+	<integer>2</integer>
+</dict>
+</plist>

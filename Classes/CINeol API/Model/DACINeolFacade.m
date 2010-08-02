@@ -94,12 +94,17 @@
                                                  news:(DANews*)news
 {    
     NSString *template = [DACINeolFacade HTMLTemplateWithName:@"news-mail-template"]; 
-    NSString *subtitle = [news.dateString stringByAppendingFormat:@" - Por %@", news.author];
-    if (subtitle == nil)
-        subtitle = @"";
+    
+    NSString *subtitle = @"";
+    if (news.author != nil)
+        subtitle = [news.dateString stringByAppendingFormat:@" - Por %@", news.author];
+    
+    NSString *photo = @"http://www.cineol.net/galeria/carteles/nada.jpg";
+    if (news.photo.photoURL != nil)
+        photo = news.photo.photoURL;
     
     NSString *HTML = [[NSString alloc] initWithFormat:template,
-                      news.photo.photoURL,
+                      photo,
                       news.title,
                       subtitle,
                       news.introduction,
@@ -124,12 +129,20 @@
                                        @"%i min. | %0.2f/%i | %@",
                                        movie.duration, movie.rating, 10, votes];
     
+    NSString *photo = @"http://www.cineol.net/galeria/carteles/nada.jpg";
+    if (movie.poster.thumbnailURL != nil)
+        photo = movie.poster.thumbnailURL;
+    
+    NSString *date = movie.datePremierSpainText;
+    if (date == nil)
+        date = [NSString stringWithFormat:@"%i", movie.year];
+    
     NSString *HTML = [[NSString alloc] initWithFormat:template,
-                      movie.poster.thumbnailURL,
+                      photo,
                       movie.title,
                       movie.genre,
                       duration_rating_votes,
-                      movie.datePremierSpainText,
+                      date,
                       movie.synopsis,
                       movie.CINeolURL];    
     

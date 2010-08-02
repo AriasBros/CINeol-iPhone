@@ -49,14 +49,12 @@ NSString* const kCINeolTitleDateNewsFormat = @"dd/MM/yyyy";
         [URL replaceOccurrencesOfString:@" "
                              withString:@"-"
                                 options:NSCaseInsensitiveSearch
-                                  range:NSMakeRange(loc, len - loc)];
-        
+                                  range:NSMakeRange(loc, len - loc)];        
         self.CINeolURL = URL;
-        CINeolURL = URL;
+        CINeolURL = [NSString stringWithString:URL];
         
         [URL release];
     }
-
 
     return CINeolURL;
 }

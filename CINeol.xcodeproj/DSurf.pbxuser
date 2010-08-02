@@ -74,8 +74,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {632, 218}}",
-							"{{637, 0}, {291, 218}}",
+							"{{0, 0}, {632, 220}}",
+							"{{637, 0}, {291, 220}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -94,8 +94,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {245, 218}}",
-							"{{250, 0}, {382, 218}}",
+							"{{0, 0}, {245, 220}}",
+							"{{250, 0}, {382, 220}}",
 						);
 					};
 				};
@@ -213,11 +213,11 @@
 	};
 	28EEC04A1118E28000187D67 /* AppDelegate_Shared.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = \"(NSString*)YOUR API KEY HERE\";\n            r = \"{869, 32}\";\n            s = 1;\n        },\n                {\n            l = \"(NSString*)YOUR API KEY HERE\";\n            r = \"{982, 32}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 6507}\";\n    s = 0;\n}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"(NSString*)YOUR API KEY HERE\";\n            r = \"{871, 32}\";\n            s = 1;\n        },\n                {\n            l = \"(NSString*)YOUR API KEY HERE\";\n            r = \"{982, 32}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 6507}\";\n    s = 0;\n}";
 			sepNavIntBoundsRect = "{{0, 0}, {2371, 2587}}";
-			sepNavSelRange = "{631, 0}";
-			sepNavVisRange = "{197, 1481}";
-			sepNavWindowFrame = "{{230, 56}, {879, 822}}";
+			sepNavSelRange = "{875, 0}";
+			sepNavVisRange = "{197, 1475}";
+			sepNavWindowFrame = "{{370, 56}, {879, 822}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -331,8 +331,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 302373481;
-			PBXWorkspaceStateSaveDate = 302373481;
+			PBXPerProjectTemplateStateSaveDate = 302447724;
+			PBXWorkspaceStateSaveDate = 302447724;
 		};
 		perUserProjectItems = {
 			C9CB1A6911CF83E80037D8B6 /* PBXBookmark */ = C9CB1A6911CF83E80037D8B6 /* PBXBookmark */;
@@ -441,9 +441,9 @@
 	};
 	C90A1A8C11F6324E00D783AC /* movie-mail-template.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {807, 1365}}";
+			sepNavIntBoundsRect = "{{0, 0}, {807, 1378}}";
 			sepNavSelRange = "{490, 0}";
-			sepNavVisRange = "{0, 1202}";
+			sepNavVisRange = "{44, 1159}";
 			sepNavWindowFrame = "{{431, 56}, {866, 822}}";
 		};
 	};
@@ -653,6 +653,14 @@
 			sepNavWindowFrame = "{{15, 56}, {839, 822}}";
 		};
 	};
+	C913CCE11205D57F0022CDB2 /* news-mail-template.html */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {772, 1222}}";
+			sepNavSelRange = "{532, 0}";
+			sepNavVisRange = "{210, 1308}";
+			sepNavWindowFrame = "{{599, 56}, {831, 822}}";
+		};
+	};
 	C9296B4111CE43D2009FFE24 /* DAMainViewController_Pad.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {580, 491}}";
@@ -735,9 +743,9 @@
 	};
 	C93FE29811F8D929006DA381 /* DACINeolObject.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {719, 1066}}";
+			sepNavIntBoundsRect = "{{0, 0}, {719, 1092}}";
 			sepNavSelRange = "{664, 0}";
-			sepNavVisRange = "{0, 1620}";
+			sepNavVisRange = "{0, 1468}";
 			sepNavWindowFrame = "{{105, 56}, {778, 822}}";
 		};
 	};
@@ -921,7 +929,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {750, 1417}}";
 			sepNavSelRange = "{1194, 0}";
-			sepNavVisRange = "{1253, 1833}";
+			sepNavVisRange = "{1165, 1887}";
 			sepNavWindowFrame = "{{446, 56}, {809, 822}}";
 		};
 	};
@@ -935,10 +943,10 @@
 	};
 	C95447F61170E25B00F24037 /* DANews.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {750, 832}}";
-			sepNavSelRange = "{265, 63}";
-			sepNavVisRange = "{78, 1420}";
-			sepNavWindowFrame = "{{15, 56}, {809, 822}}";
+			sepNavIntBoundsRect = "{{0, 0}, {750, 806}}";
+			sepNavSelRange = "{1500, 0}";
+			sepNavVisRange = "{30, 1497}";
+			sepNavWindowFrame = "{{130, 56}, {809, 822}}";
 		};
 	};
 	C954482F1170F0DD00F24037 /* DACINeolFacade.h */ = {
@@ -951,10 +959,10 @@
 	};
 	C95448301170F0DD00F24037 /* DACINeolFacade.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1017, 8021}}";
-			sepNavSelRange = "{13241, 0}";
-			sepNavVisRange = "{12765, 3051}";
-			sepNavWindowFrame = "{{217, 56}, {1076, 822}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1017, 9854}}";
+			sepNavSelRange = "{17177, 50}";
+			sepNavVisRange = "{15040, 2915}";
+			sepNavWindowFrame = "{{314, 56}, {1076, 822}}";
 		};
 	};
 	C95448D61170F91500F24037 /* DAXMLParserNewsCINeol.h */ = {
@@ -968,8 +976,8 @@
 	C95448D71170F91500F24037 /* DAXMLParserNewsCINeol.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {750, 1196}}";
-			sepNavSelRange = "{2821, 0}";
-			sepNavVisRange = "{699, 2147}";
+			sepNavSelRange = "{2233, 0}";
+			sepNavVisRange = "{657, 2186}";
 			sepNavWindowFrame = "{{78, 56}, {809, 822}}";
 		};
 	};
@@ -1224,9 +1232,9 @@
 	};
 	C9EC3603117270DE00EEA7E7 /* DANewsViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {814, 8528}}";
-			sepNavSelRange = "{15652, 0}";
-			sepNavVisRange = "{15226, 891}";
+			sepNavIntBoundsRect = "{{0, 0}, {1342, 8437}}";
+			sepNavSelRange = "{20377, 49}";
+			sepNavVisRange = "{19369, 2614}";
 			sepNavWindowFrame = "{{93, 56}, {913, 822}}";
 		};
 	};

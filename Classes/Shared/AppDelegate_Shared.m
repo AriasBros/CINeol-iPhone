@@ -38,10 +38,10 @@ void uncaughtExceptionHandler(NSException *exception) {
 {    
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
-    [DACINeolManager initializeSharedManagerWithAPIKey:<#(NSString*)YOUR API KEY HERE#>];
+    //[DACINeolManager initializeSharedManagerWithAPIKey:<#(NSString*)YOUR API KEY HERE#>];
     [DACINeolUserDefaults registerDefaults];
-    
-    [FlurryAPI startSession:<#(NSString*)YOUR API KEY HERE#>];
+
+    //[FlurryAPI startSession:<#(NSString*)YOUR API KEY HERE#>];
     
     [self initUserInterface];
     

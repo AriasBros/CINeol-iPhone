@@ -1,0 +1,2 @@
+In file included from /Users/DSurf/Desktop/Proyectos/Cocoa - iPhone/Cineol/../CINeol/Classes/Shared/../Core Data Manager/DACoreDataManager.m:9:
+/Users/DSurf/Desktop/Proyectos/Cocoa - iPhone/Cineol/../CINeol/Classes/Shared/../Core Data Manager/DACoreDataManager.h:27: error: duplicate property declaration 'applicationDocumentsDirectory'

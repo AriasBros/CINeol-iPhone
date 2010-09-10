@@ -8,7 +8,9 @@
 
 #import <Availability.h>
 #import "DAAboutViewController.h"
+#import "DACINeolUserDefaults.h"
 
+NSString *const DAAboutViewControllerCopyrightFormat = @"%@ %@ © %i %@";
 
 @interface DAAboutViewController ()
 
@@ -19,6 +21,7 @@
 
 @implementation DAAboutViewController
 
+@synthesize copyrightLabel;
 @synthesize overlayView;
 
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -33,6 +36,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.overlayView.delegate = self;
+    self.copyrightLabel.text = [NSString stringWithFormat:DAAboutViewControllerCopyrightFormat, 
+                                @"CINeol", [DACINeolUserDefaults applicationVersion],
+                                2010, @"Leafsoft, S.L."];
 }
 
 - (void) viewWillAppear:(BOOL)animated {

@@ -160,15 +160,18 @@
 {
     DAPhoto *poster = [DACINeolFacade photo];
     
-    NSURL *url = [[NSURL alloc] initWithString:thumbnailURL];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-    NSData *data = [NSURLConnection sendSynchronousRequest:request 
-                                         returningResponse:NULL
-                                                     error:NULL];
-    [url release];
-    [request release];
-    
-    UIImage *image = [UIImage imageWithData:data];
+    UIImage *image = nil;
+    if (thumbnailURL != nil) {
+        NSURL *url = [[NSURL alloc] initWithString:thumbnailURL];
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+        NSData *data = [NSURLConnection sendSynchronousRequest:request 
+                                             returningResponse:NULL
+                                                         error:NULL];
+        [url release];
+        [request release];
+        
+        image = [UIImage imageWithData:data];
+    }
     
     if (image == nil) {
         poster.thumbnailURL = nil;

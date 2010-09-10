@@ -33,7 +33,7 @@ NSString *const DACINeolNumberOfWeeksInMovieShowtimesSection = @"DACINeolNumberO
 
 + (void) registerDefaults {
     NSString *file = [[NSBundle mainBundle] pathForResource:@"UserDefaults"
-                                                     ofType: @"plist"];
+                                                     ofType:@"plist"];
     
     NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:file];
     [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary]; 
@@ -42,7 +42,7 @@ NSString *const DACINeolNumberOfWeeksInMovieShowtimesSection = @"DACINeolNumberO
 
 
 + (NSString*) applicationVersion {
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey: @"DAApplicationVersion"];
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey];
 }
 
 

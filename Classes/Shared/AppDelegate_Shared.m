@@ -41,8 +41,8 @@ void uncaughtExceptionHandler(NSException *exception) {
     //[DACINeolManager initializeSharedManagerWithAPIKey:<#(NSString*)YOUR API KEY HERE#>];
     [DACINeolUserDefaults registerDefaults];
 
-    //[FlurryAPI startSession:<#(NSString*)YOUR API KEY HERE#>];
-    
+    //[FlurryAPI startSession:(NSString*)YOUR API KEY HERE];
+
     [self initUserInterface];
     
     [self.window addSubview:[self mainView]];

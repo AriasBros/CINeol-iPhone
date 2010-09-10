@@ -446,7 +446,7 @@ static DACINeolManager  *_singleton = nil;
     
     NSString *script = [NSString stringWithFormat:DACINeolSearchMovies,
                         [userInfo objectForKey:DACINeolSearchQueryUserInfoKey]];
-    
+        
     [self runScript:script
     onFinishPerform:@selector(didSearchMovies:)
        withUserInfo:userInfo];
@@ -506,15 +506,21 @@ static DACINeolManager  *_singleton = nil;
 #pragma mark Run Script.
 - (void) runScript:(NSString*)script onFinishPerform:(SEL)selector withUserInfo:(NSDictionary*)userInfo
 {        
-    NSURL *url = [[NSURL alloc] initWithString:script];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    NSData *data = nil;
     NSError *error = nil;
     
-    NSData *data = [NSURLConnection sendSynchronousRequest:request
-                                         returningResponse:NULL 
-                                                     error:&error];
-    [url release];
-    [request release];
+    script = [script stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    if (script != nil) {
+        NSURL *url = [[NSURL alloc] initWithString:script];
+        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+        
+        data = [NSURLConnection sendSynchronousRequest:request
+                                     returningResponse:NULL 
+                                                 error:&error];
+        [url release];
+        [request release];
+    }
     
     NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] initWithDictionary:userInfo];
 

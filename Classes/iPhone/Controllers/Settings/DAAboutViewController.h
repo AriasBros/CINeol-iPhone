@@ -12,8 +12,11 @@
 @interface DAAboutViewController : UIViewController <DAOverlayViewDelegate> {
 
     @private
-    IBOutlet DAOverlayView *overlayView;
+    IBOutlet DAOverlayView  *overlayView;
+    IBOutlet UILabel        *copyrightLabel;
 }
+
+@property(retain, nonatomic, readonly) IBOutlet UILabel *copyrightLabel;
 
 - (IBAction) goToLeafsoft:(id)sender;
 - (IBAction) goToWebBeyer:(id)sender;

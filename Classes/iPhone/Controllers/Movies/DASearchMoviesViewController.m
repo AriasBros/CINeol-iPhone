@@ -137,9 +137,7 @@
 }
 
 - (void) searchBarSearchButtonClicked:(UISearchBar *)searchBar {  
-    self.currentQuery = [searchBar.text stringByAddingPercentEscapesUsingEncoding:
-                         NSUTF8StringEncoding];
-
+    self.currentQuery = searchBar.text;
     [[DACINeolManager sharedManager] searchMovies:self.currentQuery];
     [self.searchDisplayController setNoResultsLabelText:@"Buscando..."];
     

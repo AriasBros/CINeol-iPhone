@@ -15,9 +15,10 @@ static DACoreDataManager *singleton = nil;
 
 @interface DACoreDataManager ()
 
-@property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, retain) NSManagedObjectModel          *managedObjectModel;
+@property (nonatomic, retain) NSManagedObjectContext        *managedObjectContext;
+@property (nonatomic, retain) NSPersistentStoreCoordinator  *persistentStoreCoordinator;
+@property (nonatomic, retain) NSString                      *applicationDocumentsDirectory;
 
 @end
 
@@ -26,7 +27,7 @@ static DACoreDataManager *singleton = nil;
 @synthesize managedObjectContext;
 @synthesize managedObjectModel;
 @synthesize persistentStoreCoordinator;
-
+@synthesize applicationDocumentsDirectory = _documentsDirectory;
 
 - (id) initWithDatabaseName: (NSString*) name {
     if (self = [super init]) {
@@ -177,16 +178,18 @@ static DACoreDataManager *singleton = nil;
 
 #pragma mark -
 #pragma mark Application's documents directory
-
 /**
  Returns the path to the application's documents directory.
  */
 - (NSString *)applicationDocumentsDirectory {
 	
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, 
-                                                         NSUserDomainMask, YES);
-    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
-    return basePath;
+    if (!_documentsDirectory) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, 
+                                                             NSUserDomainMask, YES);
+        self.applicationDocumentsDirectory = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;        
+    }
+    
+    return _documentsDirectory;
 }
 
 

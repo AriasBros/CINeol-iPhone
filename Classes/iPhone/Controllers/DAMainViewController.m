@@ -35,6 +35,8 @@
     [FlurryAPI countPageViews:[self newsListViewController]];
     [FlurryAPI countPageViews:[self movieShowtimesViewController]];
     [FlurryAPI countPageViews:[self moviesViewController]];
+    //[FlurryAPI countPageViews:[self reviewsViewController]];
+    //[FlurryAPI countPageViews:[self peopleViewController]];
     [FlurryAPI countPageViews:[self settingsViewController]];
     
     self.viewControllers = [[NSArray alloc] initWithObjects:

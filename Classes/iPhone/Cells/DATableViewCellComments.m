@@ -51,7 +51,7 @@
 
 - (void) loadComment:(NSString*)comment {
     comment = [NSString stringWithFormat:self.commentHTMLTemplate, comment];
-    [self.commentView loadHTMLString:comment baseURL:[NSURL URLWithString:nil]];
+    [self.commentView loadHTMLString:comment baseURL:nil];
 }
 
 

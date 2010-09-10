@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSManagedObjectModel_CurrentVersionName</key>
+	<string>CINeol</string>
+	<key>NSManagedObjectModel_VersionHashes</key>
+	<dict>
+		<key>CINeol</key>
+		<dict>
+			<key>DACINeolObject</key>
+			<data>
+			wHaGF1TeZF3KEyqmTcbYssal71JXq+z8AmqOU3dCcF8=
+			</data>
+			<key>DAComment</key>
+			<data>
+			1RRZvgoZism/71O1WFQxcUTJn+8jkSwZmHUFy2SxgZU=
+			</data>
+			<key>DACredit</key>
+			<data>
+			XotsdeVhtpECUhaE+ORi6t0L2p451UsDiGb5qn9RSFU=
+			</data>
+			<key>DAGenre</key>
+			<data>
+			p9XV6vZ8xIyppL1vsYOeijF0vGh6XexoTC2Gu5THeeU=
+			</data>
+			<key>DAMovie</key>
+			<data>
+			ndykIOZ0BbklisrBQ3mx9KdIBgn8OiyAchgD+2aLf5I=
+			</data>
+			<key>DANews</key>
+			<data>
+			Rrbf+t09hVVV27zJ93tBhCmNurWvps/n8DZyHi54bnc=
+			</data>
+			<key>DAPerson</key>
+			<data>
+			5tesNJRuq+F2Xr8GnWrQYd/QuA2g9IBa+lN0LMCITE8=
+			</data>
+			<key>DAPhoto</key>
+			<data>
+			qC/RKVAHJvn8U5JlfdwPcsa4DlEt0bxTUOcKMpGJuHA=
+			</data>
+			<key>DAReviews</key>
+			<data>
+			9NbZbQzivmZksCho2yYS38KcRyE+nhapUeKrvTFwByw=
+			</data>
+			<key>DATrailer</key>
+			<data>
+			o5FZjnAv1G2SpuWmxx+hBYmA6g0/mKD31Hww+Dqp7+c=
+			</data>
+		</dict>
+	</dict>
+</dict>
+</plist>
